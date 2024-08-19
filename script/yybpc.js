@@ -6,8 +6,9 @@
 
 const $ = new Env('爷爷不泡茶');
 
-const CV = `${$request.headers["Qm-User-Token"] `;
-if(CV) {
+const CV = `${$request.headers["Qm-User-Token"]}`;
+
+if (CV) {
     console.log(`爷爷不泡茶获取cookie成功🎉: ${CV}`)
     $.msg('爷爷不泡茶获取cookie成功🎉', '', CV, {'update-pasteboard': CV,openUrl: "quantumult-x://"});
 
