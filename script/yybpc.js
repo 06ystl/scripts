@@ -9,14 +9,7 @@ const $ = new Env('爷爷不泡茶');
 const CV = `${$request.headers["Qm-User-Token"] `;
 if(CV) {
     console.log(`爷爷不泡茶获取cookie成功🎉: ${CV}`)
-    $.msg('爷爷不泡茶获取cookie成功🎉', '', CV, {'update-pasteboard': CookieValue,openUrl: "quantumult-x://"});
-
-}
-if (CV.match(/(pt_key=.+?pt_pin=|pt_pin=.+?pt_key=)/)) {
-    const CookieValue = CV.match(/pt_key=.+?;/) + CV.match(/pt_pin=.+?;/);
-    if (CookieValue.indexOf("fake_") > -1) return console.log("异常账号");
-    console.log(`京东获取cookie成功🎉: ${CookieValue}`)
-    $.msg('京东获取cookie成功🎉', '', CookieValue, {'update-pasteboard': CookieValue,openUrl: "Telegram://"});
+    $.msg('爷爷不泡茶获取cookie成功🎉', '', CV, {'update-pasteboard': CV,openUrl: "quantumult-x://"});
 
 }
 
